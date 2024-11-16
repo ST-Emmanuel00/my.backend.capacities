@@ -4,6 +4,6 @@ import { Response } from './common/types';
 @Injectable()
 export class AppService {
   health(): Response {
-    return { message: 'App ok.' };
+    return { message: ['App ok.'] };
   }
 }

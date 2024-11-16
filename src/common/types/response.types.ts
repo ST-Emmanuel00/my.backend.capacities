@@ -1,4 +1,4 @@
 export interface Response {
-    message: string;
+    message: string[];
     info?: any;
 }

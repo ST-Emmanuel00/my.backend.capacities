@@ -1,2 +1,2 @@
-import { envValues } from './env.config';
-export {envValues}
+export { OpenAIConfig } from './openai.config';
+export { envValues } from './env.config';

@@ -1,2 +1,1 @@
-import { Response } from '../types/response.types';
-export { Response }
+export { Response } from '../types/response.types';
