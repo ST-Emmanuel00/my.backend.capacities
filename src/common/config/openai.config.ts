@@ -3,9 +3,9 @@ import { envValues } from "./env.config";
 
 export class OpenAIConfig {
 
-    private model: string = "gpt-3.5-turbo";
+    public model: string = "gpt-3.5-turbo";
 
-    private ai = new OpenAI({
+    public ai = new OpenAI({
         apiKey: envValues.openai_api_key,
     });
 

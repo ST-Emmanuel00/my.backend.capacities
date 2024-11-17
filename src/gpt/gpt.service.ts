@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { OrthographtDto } from './dto';
+import { OrthographtDto, ProsConsDiscusserDto } from './dto';
 import * as GptUseCase from './use-case';
 import { OpenAIConfig } from '../common/config';
 
@@ -15,5 +15,13 @@ export class GptService {
       prompt: orthographtDto.prompt
     });
   }
+
+  async prosConsDicusser(prosConsDicusserDto: ProsConsDiscusserDto) {
+    return await GptUseCase.prosConsDicusser(this.ai, {
+      prompt: prosConsDicusserDto.prompt
+    });
+  }
+
+
 
 }
